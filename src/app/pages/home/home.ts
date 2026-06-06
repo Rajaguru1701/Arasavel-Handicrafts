@@ -30,8 +30,8 @@ import { CommonModule } from '@angular/common';
 
         <h1 class="font-serif text-4xl sm:text-5xl md:text-7xl text-gold leading-tight mb-4"
             style="text-shadow: 0 2px 20px rgba(212,175,55,0.4);">
-          Temple Festival<br>
-          <span class="text-mustard">Regalia</span>
+          Arasavel<br>
+          <span class="text-mustard">Handi Crafts</span>
         </h1>
 
         <hr class="gold-divider w-56 mx-auto my-6">
@@ -128,25 +128,25 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent {
   categories = [
-    {
-      name: 'Procession Items',
-      icon: '☂️',
-      bg: 'linear-gradient(135deg,#800020 0%,#5a0015 100%)',
-      desc: 'Ceremonial umbrellas, palanquins, and divine procession accessories for grand Thiruvizha festivals.'
-    },
-    {
-      name: 'Temple Flags (Kodi)',
-      icon: '🚩',
-      bg: 'linear-gradient(135deg,#002060 0%,#001040 100%)',
-      desc: 'Sacred Kovil Kodi in Shaivite, Vaishnavite, and Amman traditions — richly embroidered in zari.'
-    },
-    {
-      name: 'Deity Alankaram',
-      icon: '🌺',
-      bg: 'linear-gradient(135deg,#D4AF37 0%,#FFC30B 100%)',
-      desc: 'Exquisite Thiruvaabharanam sets, Kavacham, and deity adornments handcrafted for divine splendour.'
-    }
-  ];
+  {
+    name: 'Kodai',
+    icon: '☂️',
+    bg: "linear-gradient(135deg, rgba(128, 0, 32, 0.75) 0%, rgba(90, 0, 21, 0.9) 100%), url('/44.jpeg') center/cover no-repeat",
+    desc: 'Ceremonial umbrellas, palanquins, and divine procession accessories for grand Thiruvizha festivals.'
+  },
+  {
+    name: 'Temple Flags (Kodi)',
+    icon: '🚩',
+    bg: "linear-gradient(135deg, rgba(0, 32, 96, 0.75) 0%, rgba(0, 16, 64, 0.9) 100%), url('/nine.jpeg') center/cover no-repeat",
+    desc: 'Sacred Kovil Kodi in Shaivite, Vaishnavite, and Amman traditions — richly embroidered in zari.'
+  },
+  {
+    name: 'Ther',
+    icon: '🌺',
+    bg: "linear-gradient(135deg, rgba(212, 175, 55, 0.8) 0%, rgba(255, 195, 11, 0.9) 100%), url('/45.jpeg') center/cover no-repeat",
+    desc: 'Grand velvet chariot hangings adorned with hand-drawn peacocks, elephants, and sacred iconography tailored for majestic festival processions.'
+  }
+];
 
   promises = [
     { icon: '✋', title: 'Handcrafted',     desc: 'Every item made by skilled artisans using age-old embroidery techniques.' },
