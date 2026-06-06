@@ -1,0 +1,100 @@
+<!-- Page Header -->
+<div class="bg-crimson py-16 text-center relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10"
+       style="background-image: repeating-linear-gradient(45deg,#D4AF37 0,#D4AF37 1px,transparent 0,transparent 30px); background-size:30px 30px;"></div>
+  <div class="relative">
+    <p class="text-mustard font-serif text-xs tracking-[0.4em] uppercase mb-3">Our Heritage</p>
+    <h1 class="font-serif text-4xl md:text-5xl text-gold">The Artisan's Journey</h1>
+    <hr class="gold-divider w-32 mx-auto mt-4">
+  </div>
+</div>
+
+<!-- Story Section with Media Integration -->
+<section class="py-20 bg-[#fdf8f0]">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <div>
+      <p class="text-crimson font-serif text-xs tracking-[0.4em] uppercase mb-3">Who We Are</p>
+      <h2 class="font-serif text-3xl text-navy mb-6 leading-snug">
+        Engineered Precision,<br>Steeped in Sacred Tradition
+      </h2>
+      <hr class="gold-divider w-32 mb-6" style="margin-left:0;">
+      
+      <p class="font-body text-gray-700 leading-relaxed mb-5">
+        Led by <strong>Aravinth</strong>, a professional Mechanical Engineer turned master festival craftsman, our workshop unites modern technical layout planning with centuries-old heritage methods. Based in Madurai, we specialize in weaving the massive visual identity of Tamil Nadu's grand temple festival cars (Ther Alankaram).
+      </p>
+      <p class="font-body text-gray-700 leading-relaxed mb-5">
+        Our work is recognizable by its heavy velvet bases, vibrant traditional imagery featuring sacred peacocks, elephants, and temple iconography, all hand-outlined using traditional white thread tailoring techniques.
+      </p>
+      <p class="font-body text-gray-700 leading-relaxed">
+        From the grand streets of Tamil Nadu to overseas Tamil diaspora temples across the US, Singapore, Malaysia, and Thailand, our regalia stands as a testament to unchanging devotion and flawless execution.
+      </p>
+    </div>
+
+    <!-- Media Panel Displaying Original Article Clips -->
+    <div class="space-y-6">
+      <div class="temple-border rounded-sm bg-navy p-6 text-center text-gold shadow-lg">
+        <h3 class="font-serif text-mustard text-lg tracking-wide mb-4">Featured Heritage Press</h3>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white/10 p-2 rounded">
+            <img src="42.jpeg" alt="Aravinth showcasing Ther Alankaram fabrics" class="w-full h-auto rounded object-cover shadow">
+            <span class="text-xs text-gold/60 mt-1 block">Aravinth with Peacock Motif</span>
+          </div>
+          <div class="bg-white/10 p-2 rounded">
+            <img src="43.jpeg" alt="Artisans working in the Madurai workshop" class="w-full h-auto rounded object-cover shadow">
+            <span class="text-xs text-gold/60 mt-1 block">Our Madurai Workshop Line</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="temple-border rounded-sm bg-crimson p-6 text-center text-white">
+        <h3 class="font-serif text-gold text-lg tracking-wide mb-3">Our Core Principles</h3>
+        <ul class="text-white/90 font-body text-xs space-y-2 text-left">
+          <li *ngFor="let v of values" class="flex items-start gap-2">
+            <span class="text-gold mt-0.5">✦</span>
+            <span>{{ v }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Craft Process -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-center text-crimson font-serif text-xs tracking-[0.4em] uppercase mb-2">The Sacred Process</p>
+    <h2 class="text-center font-serif text-3xl text-navy mb-3">Honoring the Blueprint</h2>
+    <hr class="gold-divider w-40 mx-auto mb-14">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div *ngFor="let step of craftSteps; let i = index" class="text-center">
+        <div class="w-12 h-12 rounded-full bg-crimson flex items-center justify-center text-gold font-serif text-lg mx-auto mb-4 border-2 border-gold">
+          {{ i + 1 }}
+        </div>
+        <div class="text-3xl mb-3">{{ step.icon }}</div>
+        <h3 class="font-serif text-crimson text-sm tracking-widest uppercase mb-2">{{ step.title }}</h3>
+        <p class="text-gray-500 font-body text-xs leading-relaxed">{{ step.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Historic Commissions & Milestones -->
+<section class="py-20 bg-navy text-gold">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="font-serif text-3xl text-center tracking-widest mb-3">Historic Commissions Served</h2>
+    <p class="text-center text-gold/60 max-w-xl mx-auto text-sm mb-10">
+      Our creations have adorned major legendary shrines across southern India and major global temple events.
+    </p>
+    <hr class="gold-divider w-40 mx-auto mb-14">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div *ngFor="let m of milestones" class="temple-border rounded-sm p-6 bg-navy/50 border border-gold/20">
+        <span class="text-xs bg-crimson text-white px-2 py-1 rounded font-mono tracking-wider">{{ m.year }}</span>
+        <h3 class="font-serif text-mustard text-base tracking-wide mt-4 mb-2">{{ m.title }}</h3>
+        <p class="text-gold/70 font-body text-xs leading-relaxed">{{ m.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>
